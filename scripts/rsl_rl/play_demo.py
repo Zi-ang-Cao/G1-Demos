@@ -51,9 +51,9 @@ from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import (
 )
 
 # Import extensions to set up environment tasks
-import g1_demos.tasks  # noqa: F401
+import G1_minimal.tasks  # noqa: F401
 
-from g1_demos.tasks.end2end.banana.banana_perception import Perception
+from G1_minimal.tasks.end2end.banana.banana_perception import Perception
 
 
 def main():

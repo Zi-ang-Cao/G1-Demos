@@ -26,31 +26,31 @@ This repository serves as a template for building projects or extensions based o
 - Clone the repository separately from the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
 
 ```bash
-# Option 1: HTTPS
-git clone https://github.com/isaac-sim/IsaacLabExtensionTemplate.git
-
-# Option 2: SSH
-git clone git@github.com:isaac-sim/IsaacLabExtensionTemplate.git
+# SSH
+git clone git@github.com:Zi-ang-Cao/G1-Demos.git
 ```
 
-- Throughout the repository, the name `g1_demos` only serves as an example and we provide a script to rename all the references to it automatically:
+- Throughout the repository, the name `G1_minimal` only serves as an example and we provide a script to rename all the references to it automatically:
 
 ```bash
 # Enter the repository
-cd IsaacLabExtensionTemplate
-# Rename all occurrences of g1_demos (in files/directories) to your_fancy_extension_name
-python scripts/rename_template.py your_fancy_extension_name
+cd G1-Demos
+# Rename all occurrences of G1_minimal (in files/directories) to your_fancy_extension_name
+# python scripts/rename_template.py your_fancy_extension_name
 ```
 
 - Using a python interpreter that has Isaac Lab installed, install the library
 
 ```bash
-python -m pip install -e exts/g1_demos
+python -m pip install -e exts/G1_minimal
 ```
 
 - Verify that the extension is correctly installed by running the following command:
 
 ```bash
+cd /home/ziang/code/humanoid_codebase/G1-Demos
+python scripts/rsl_rl/train.py --task=Velocity-G1-v0
+
 python scripts/rsl_rl/train.py --task=Velocity-G1-v0
 ```
 
@@ -68,7 +68,7 @@ If everything executes correctly, it should create a file .python.env in the `.v
 
 ### Setup as Omniverse Extension (Optional)
 
-We provide an example UI extension that will load upon enabling your extension defined in `exts/g1_demos/g1_demos/ui_extension_example.py`. For more information on UI extensions, enable and check out the source code of the `omni.isaac.ui_template` extension and refer to the introduction on [Isaac Sim Workflows 1.2.3. GUI](https://docs.omniverse.nvidia.com/isaacsim/latest/introductory_tutorials/tutorial_intro_workflows.html#gui).
+We provide an example UI extension that will load upon enabling your extension defined in `exts/G1_minimal/G1_minimal/ui_extension_example.py`. For more information on UI extensions, enable and check out the source code of the `omni.isaac.ui_template` extension and refer to the introduction on [Isaac Sim Workflows 1.2.3. GUI](https://docs.omniverse.nvidia.com/isaacsim/latest/introductory_tutorials/tutorial_intro_workflows.html#gui).
 
 To enable your extension, follow these steps:
 
@@ -107,7 +107,7 @@ In some VsCode versions, the indexing of part of the extensions is missing. In t
 ```json
 {
     "python.analysis.extraPaths": [
-        "<path-to-ext-repo>/exts/g1_demos"
+        "<path-to-ext-repo>/exts/G1_minimal"
     ]
 }
 ```

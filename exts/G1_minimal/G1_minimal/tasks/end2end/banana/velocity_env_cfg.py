@@ -18,7 +18,7 @@ from omni.isaac.lab.utils import configclass
 from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR, ISAACLAB_NUCLEUS_DIR
 from omni.isaac.lab.utils.noise import AdditiveUniformNoiseCfg as Unoise
 
-import g1_demos.tasks.locomotion.velocity.mdp as mdp
+import G1_minimal.tasks.end2end.banana.mdp as mdp
 
 ##
 # Pre-defined configs
@@ -73,6 +73,13 @@ class MySceneCfg(InteractiveSceneCfg):
         spawn=sim_utils.DomeLightCfg(
             intensity=750.0,
             texture_file=f"{ISAAC_NUCLEUS_DIR}/Materials/Textures/Skies/PolyHaven/kloofendal_43d_clear_puresky_4k.hdr",
+        ),
+    )
+
+    room: AssetBaseCfg = AssetBaseCfg(
+        prim_path="/World/room",
+        spawn=sim_utils.UsdFileCfg(
+            usd_path=f"{ISAAC_NUCLEUS_DIR}/Environments/Digital_Twin_Warehouse/small_warehouse_digital_twin.usd"
         ),
     )
 

@@ -3,8 +3,8 @@ from omni.isaac.lab.managers import SceneEntityCfg
 from omni.isaac.lab.managers import TerminationTermCfg as DoneTerm
 from omni.isaac.lab.utils import configclass
 
-import g1_demos.tasks.locomotion.velocity.mdp as mdp
-from g1_demos.tasks.locomotion.velocity.velocity_env_cfg import (
+import G1_minimal.tasks.locomotion.velocity.mdp as mdp
+from G1_minimal.tasks.locomotion.velocity.velocity_env_cfg import (
     LocomotionVelocityRoughEnvCfg,
     RewardsCfg,
 )

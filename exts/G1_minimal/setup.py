@@ -1,4 +1,4 @@
-"""Installation script for the 'g1_demos' python package."""
+"""Installation script for the 'G1_minimal' python package."""
 
 import os
 import toml
@@ -18,8 +18,8 @@ INSTALL_REQUIRES = [
 
 # Installation operation
 setup(
-    name="g1_demos",
-    packages=["g1_demos"],
+    name="G1_minimal",
+    packages=["G1_minimal"],
     author=EXTENSION_TOML_DATA["package"]["author"],
     maintainer=EXTENSION_TOML_DATA["package"]["maintainer"],
     url=EXTENSION_TOML_DATA["package"]["repository"],

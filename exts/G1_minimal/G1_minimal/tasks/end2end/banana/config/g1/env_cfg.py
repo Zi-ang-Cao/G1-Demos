@@ -6,8 +6,8 @@ from omni.isaac.lab.utils import configclass
 from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
 import omni.isaac.lab.sim as sim_utils
 
-import g1_demos.tasks.end2end.banana.mdp as mdp
-from g1_demos.tasks.end2end.banana.velocity_env_cfg import (
+import G1_minimal.tasks.end2end.banana.mdp as mdp
+from G1_minimal.tasks.end2end.banana.velocity_env_cfg import (
     LocomotionVelocityRoughEnvCfg,
     RewardsCfg,
 )
