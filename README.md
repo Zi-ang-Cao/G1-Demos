@@ -50,8 +50,10 @@ python -m pip install -e exts/G1_minimal
 ```bash
 cd /home/ziang/code/humanoid_codebase/G1-Demos
 python scripts/rsl_rl/train.py --task=Velocity-G1-v0
+python scripts/rsl_rl/train.py --task=Velocity-Rough-G1-v0 --headless
 
-python scripts/rsl_rl/train.py --task=Velocity-G1-v0
+train_g1_lab_headless
+train_g1_lab
 ```
 
 ```bash
